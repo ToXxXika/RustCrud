@@ -1,0 +1,16 @@
+Serde is a framework for serializing and deserializing Rust data structures efficiently and generically.
+https://serde.rs/   documentation
+rocket needs rust nightly mode to works
+CMD: (rustup default nightly)
+CMD: (cargo install diesel_cli) to use diesel commands
+
+CMD :(diesel setup) will create migration up & down
+  up : for everything we do on the database
+  down : to undo any operation
+  // custom migration cmd : diesel migration generate (file name)
+      //result : 2 files ups and downs
+
+     PS : apparently new diesel version won't generate default ups and downs
+CMD :(diesel migration run) will run ur migrations
+CMD : (diesel migration redo) will run down sql then up sql
+
