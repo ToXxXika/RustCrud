@@ -1,9 +1,10 @@
 use diesel;
 use diesel:: prelude::*;
 use diesel::mysql::MysqlConnection;
-use Schema::user;
+
 //DSL : dynamic specific language
 use Schema::user::dsl::user as all_users;
+use crate::Schema::user;
 
 #[derive(Queryable)]
 pub struct User{
